@@ -25,3 +25,8 @@ git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git
 
 popd
+
+pushd package/base-files/files/etc
+rm banner
+wget https://github.com/bXZb/release/raw/main/banner
+popd
