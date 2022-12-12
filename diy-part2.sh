@@ -19,6 +19,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 #
 pushd package/feeds/luci
 rm -rf luci-theme-argon
+rm -rf luci-app-argon-config
 
 # luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
